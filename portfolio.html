@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
     <!--шапка страницы-->
     <header class="header">
@@ -25,6 +26,7 @@
                 <li class="nav-item"><a class="nav-link link" href="">Контакты</a></li>
             </ul>
         </nav>
+       
         <ul class="contacts-list list">
             <li class="contacts-item"> <a class="contacts-link link" href="mailto:info@devstudio.com">
                 <svg class="contacts-icon" width=16 height=12> 
@@ -38,6 +40,7 @@
         </ul>
         </div>
     </header>
+
     <!--основной блок-->
     <main>
         <section class="portfolio section">
@@ -50,6 +53,7 @@
                 <li class="buttons"><button type="button">Дизайн</button></li>
                 <li class="buttons"><button type="button">Маркетинг</button></li>
             </ul>
+
             <ul class="activities-list list">
                 <li class="activities-item">
                     <a class="activities-link link" href="">
@@ -246,16 +250,15 @@
                                 <use href="./images/icons.svg#icon-linkedin"></use>
                             </svg>
                         </a>
-                    </li>
-    
-                </ul>
-    
+                    </li>    
+                </ul>    
             </div>
-            <div>
+
+            <div class="subs-cont">
                 <p class="subscription-text">Подпишитесь на рассылку</p>
                 <form class="subscription">
                     <div class="subscription-field">
-                        <input type="email" name="mail" placeholder="E-mail">
+                        <input type="email" name="mail" class="subscription-input" placeholder="E-mail">
                         <button type="submit">Подписаться
                             <svg class="subscription-icon" width="24" height="24">
                                 <use href="./images/icons.svg#icon-send">
@@ -265,8 +268,7 @@
                     </div>
                 </form>
             </div>
-        </div>
-    
+        </div>    
     </footer>
 </body>
 

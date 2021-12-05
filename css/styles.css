@@ -20,6 +20,7 @@ body {
   color: var(--main-color);
   background-color: #ffffff;
 }
+
 /* контейнер для структурирования и позиционирования секций */
 .container {
   width: 1200px;
@@ -44,6 +45,7 @@ img {
 .header {
   border-bottom: 1px solid #ececec;
 }
+
 /*----отключение подчеркивания в ссылках----*/
 .link {
   text-decoration: none;
@@ -70,6 +72,7 @@ img {
 .logo > span {
   color: var(--accent-color);
 }
+
 .nav-list {
   display: flex;
 }
@@ -100,6 +103,7 @@ img {
 .nav-link.current {
   color: var(--accent-color);
 }
+
 .nav-link.current::after {
   position: absolute;
   left: 0;
@@ -146,6 +150,7 @@ img {
   margin-right: 10px;
   fill: currentColor;
 }
+
 /* выделение иконок при hover и focus родителя */
 .header a:hover .contacts-icon,
 .header a:focus .contacts-icon {
@@ -218,6 +223,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+
 .feature-elements {
   display: flex;
   align-items: center;
@@ -237,9 +243,11 @@ img {
   display: flex;
   justify-content: center;
 }
+
 .feature-item {
   width: 270px;
 }
+
 .feature-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -279,6 +287,7 @@ img {
 .specialization-wrapper {
   position: relative;
 }
+
 .specialization-text {
   position: absolute;
   left: 0;
@@ -300,6 +309,7 @@ img {
 .team {
   background-color: #f5f4fa;
 }
+
 .team-title {
   margin: 0;
   margin-bottom: 50px;
@@ -415,6 +425,7 @@ img {
 .clients-item:not(:last-child) {
   margin-right: 30px;
 }
+
 .clients-link {
   display: flex;
   align-items: center;
@@ -428,6 +439,7 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .clients-icon {
   width: 106px;
   height: 60px;
@@ -444,10 +456,10 @@ footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
 footer .container {
   display: flex;
   align-items: baseline;
-  justify-content: space-between;
 }
 
 footer .logo {
@@ -546,6 +558,7 @@ address {
   margin-bottom: 34px;
   justify-content: center;
 }
+
 .list-buttons .buttons:not(:last-child) {
   margin-right: 8px;
 }
@@ -578,6 +591,7 @@ address {
 .activities-item:not(:nth-child(3n)) {
   margin-right: 30px;
 }
+
 .activities-item:not(:nth-last-child(-n + 3)) {
   margin-bottom: 30px;
 }
@@ -586,6 +600,7 @@ address {
   position: relative;
   overflow: hidden;
 }
+
 .popup-window {
   position: absolute;
   top: 0;
@@ -614,6 +629,7 @@ address {
   border-bottom-right-radius: 4px;
   background: var(--third-color);
 }
+
 .activities-information .title {
   margin-bottom: 4px;
 }
@@ -703,7 +719,11 @@ footer button:focus {
   box-shadow: var(--shadow-button-footer);
 }
 
-.subscription input {
+.subs-cont {
+  margin-left: auto;
+}
+
+.subscription-input {
   margin-right: 12px;
   padding: 15px;
   width: 358px;
@@ -714,7 +734,8 @@ footer button:focus {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 }
-.subscription input::placeholder {
+
+.subscription-input::placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;

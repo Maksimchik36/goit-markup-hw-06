@@ -735,6 +735,12 @@ footer button:focus {
   border-radius: 4px;
 }
 
+/*при фокусе делает обводку inputa в форме футера. в дз не было указано */
+/* .subscription-input:focus {
+  border-color: var(--accent-color);
+  outline: none;
+} */
+
 .subscription-input::placeholder {
   font-weight: 400;
   font-size: 16px;
@@ -811,6 +817,10 @@ button.close {
   color: var(--main-color);
 }
 
+.modal-form {
+  margin-bottom: 20px;
+}
+
 .modal-field {
   margin-bottom: 10px;
 }
@@ -871,6 +881,58 @@ textarea::placeholder {
   height: 18px;
 }
 
+.check-field {
+  margin-bottom: 30px;
+}
+
+.check-field .check-label {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--second-color);
+}
+.check-field .check-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 15px;
+  border: 2px solid #000000;
+  border-radius: 2px;
+  margin-right: 7px;
+}
+
+.check-field .check-icon {
+  fill: var(--third-color);
+}
+
+.modal-check:checked + .check-label .check-item {
+  background-color: var(--accent-color);
+  border: none;
+}
+
+.policy-link {
+  margin-left: 3px;
+  color: var(--accent-color);
+}
+
+.modal .send {
+  padding: 10px 55px;
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--third-color);
+}
+
+/* скрывает элемент */
 .is-hidden {
   opacity: 0;
   pointer-events: none;
